@@ -75,12 +75,12 @@
                     <div class="template-layout-column-center-left">
                         <h6>Services</h6>
                         <ul class="template-list-reset">
-                            <li><a href="index371c.html?page=service-style-1">Exterior Hand Wash</a></li>
-                            <li><a href="index371c.html?page=service-style-1">Tower Hand Dry</a></li>
-                            <li><a href="index371c.html?page=service-style-1">Tire Dressing</a></li>
-                            <li><a href="index371c.html?page=service-style-1">Wheel Shine</a></li>
-                            <li><a href="index371c.html?page=service-style-1">Interior Vacuum</a></li>
-                            <li><a href="index371c.html?page=service-style-1">Sealer Hand Wax</a></li>
+                            <li><a href="{{ route('services') }}">Exterior Hand Wash</a></li>
+                            <li><a href="{{ route('services') }}">Tower Hand Dry</a></li>
+                            <li><a href="{{ route('services') }}">Tire Dressing</a></li>
+                            <li><a href="{{ route('services') }}">Wheel Shine</a></li>
+                            <li><a href="{{ route('services') }}">Interior Vacuum</a></li>
+                            <li><a href="{{ route('services') }}">Sealer Hand Wax</a></li>
                         </ul>
                     </div>
 
@@ -88,12 +88,12 @@
                     <div class="template-layout-column-center-right">
                         <h6>Company</h6>
                         <ul class="template-list-reset">
-                            <li><a href="index4d99.html?page=about-style-1">About Us</a></li>
-                            <li><a href="indexd590.html?page=gallery">Gallery</a></li>
-                            <li><a href="index3550.html?page=service-style-2">Our Services</a></li>
-                            <li><a href="indexd852.html?page=book-your-wash">Book Your Wash</a></li>
-                            <li><a href="indexd590.html?page=gallery">Portfolio</a></li>
-                            <li><a href="index2a26.html?page=contact-style-1">Contact</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
+                            <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                            <li><a href="{{ route('blog-post') }}">Blog</a></li>
+                            <li><a href="{{ route('services') }}">Our Services</a></li>
+                            <li><a href="{{ route('booking') }}">Book Your Wash</a></li>
+                            <li><a href="{{ route('contact-us') }}">Contact</a></li>
                         </ul>
                     </div>
 
@@ -120,17 +120,17 @@
 
                 <!-- Social icon list -->
                 <ul class="template-component-social-icon-list template-component-social-icon-list-2">
-                    <li><a href="https://twitter.com/quanticalabs" class="template-icon-social-twitter" target="_blank"></a></li>
-                    <li><a href="https://www.facebook.com/QuanticaLabs" class="template-icon-social-facebook" target="_blank"></a></li>
-                    <li><a href="https://dribbble.com/quanticalabs" class="template-icon-social-dribbble" target="_blank"></a></li>
-                    <li><a href="http://themeforest.net/user/QuanticaLabs/portfolio?ref=quanticalabs" class="template-icon-social-envato" target="_blank"></a></li>
-                    <li><a href="https://www.behance.net/quanticalabs" class="template-icon-social-behance" target="_blank"></a></li>
-                    <li><a href="https://www.youtube.com/user/quanticalabs" class="template-icon-social-youtube" target="_blank"></a></li>
+                    <li><a href="#" class="template-icon-social-twitter"></a></li>
+                    <li><a href="#" class="template-icon-social-facebook"></a></li>
+                    <li><a href="#" class="template-icon-social-dribbble"></a></li>
+                    <li><a href="#" class="template-icon-social-envato"></a></li>
+                    <li><a href="#" class="template-icon-social-behance"></a></li>
+                    <li><a href="#" class="template-icon-social-youtube"></a></li>
                 </ul>
 
                 <!-- Copyright -->
                 <div class="template-footer-bottom-copyright">
-                    By <a href="http://quanticalabs.com/" target="_blank">QuanticaLabs</a> &copy; 2016 <a href="http://themeforest.net/user/QuanticaLabs/portfolio?ref=quanticalabs" target="_blank">Wink Car Detailing Template</a>
+                    By <a href="{{ route('home') }}" target="_blank">Wink Car Details</a> &copy; 2016 <a href="{{ route('home') }}" target="_blank">Wink Car Detailing Template</a>
                 </div>
 
             </div>

@@ -1,7 +1,15 @@
 @extends('layouts.frontend.app')
 
 @section('header')
-@include('partials.frontend.booking-header')
+@include('partials.frontend.booking-header', ['breadcrumbContent' => '
+    <div class="template-header-bottom-page-title">
+        <h1>Book your wash</h1>
+    </div>
+
+    <div class="template-header-bottom-page-breadcrumb">
+        <a href="' . route('home') . '">Home</a><span class="template-icon-meta-arrow-right-12"></span>Book your wash
+    </div>
+'], ['imgClass' => 'template-header-background-1'])
 @endsection
 
 @section('content')

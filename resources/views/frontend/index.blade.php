@@ -599,7 +599,7 @@
                 <div class="template-component-image template-component-image-preloader">
 
                     <!-- Orginal image -->
-                    <a href="media/image/sample/460x678/image_01.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
 
                         <!-- Thumbnail -->
                         <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" alt="" />
@@ -619,9 +619,7 @@
 
                     <!-- Fancybox description -->
                     <div class="template-component-image-description">
-                        Suspendisse sagittis placerat diam sit amet viverra neque elementum et. Donec lacinia in tortor ac tristique.
-                        In dui leo bibendum et dignissim non laoreet ut nulla. Nunc vulputate odio a dapibus feugiat tortor velit iaculis libero
-                        sit amet euismod lacus elit et enim. Aliquam semper nunc sed rhoncus interdum.
+                        The BMW i3 is a revolutionary electric vehicle that combines sustainability, innovation, and style in one package. With its sleek design, advanced technology, and impressive range, the BMW i3 offers a driving experience that is both eco-friendly and exhilarating. Embrace the future of mobility with the BMW i3 and discover a new level of driving pleasure.
                     </div>
 
                 </div>
@@ -631,7 +629,7 @@
             <!-- Image -->
             <li class="template-filter-auto-detail template-filter-triple-foam">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="media/image/sample/460x306/image_01.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
                             <span>
@@ -644,9 +642,7 @@
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        Nam mollis libero at mollis lacinia. Praesent nunc turpis mollis in congue a lacinia at nisl.
-                        Quisque tincidunt vehicula dolor a eleifend. In nec tellus eu nisi fringilla molestie ac eu enim.
-                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque gravida nibh a lobortis blandit risus turpis auctor ligula.
+                        The Renault Clio - A perfect blend of style and performance in a compact package. With its sleek design and modern features, the Renault Clio offers a dynamic driving experience. Enjoy the comfort and efficiency of its advanced engine options, making every journey a pleasure. Whether you're cruising through the city or hitting the open road, the Renault Clio delivers a balance of practicality and style that sets it apart. Experience the joy of driving with the Renault Clio, a compact car that exceeds expectations.
                     </div>
                 </div>
             </li>
@@ -654,7 +650,7 @@
             <!-- Image -->
             <li class="template-filter-hand-wash template-filter-auto-detail template-filter-hand-wax">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="media/image/sample/460x306/image_02.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
                             <span>
@@ -667,9 +663,7 @@
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        Morbi est augue porta in consequat nec pretium eget nunc. In ullamcorper ante quis pharetra finibus.
-                        Phasellus tincidunt augue sed velit molestie a pretium neque accumsan. Nam id ligula arcu. Proin non tempus eros.
-                        Pellentesque congue libero eget tristique consectetur.
+                        The Volkswagen Polo is a compact car that exudes style and versatility. With its sleek design and advanced features, the Polo offers a delightful driving experience, combining comfort and performance effortlessly. Engineered with precision and built to last, the Polo strikes the perfect balance between elegance and practicality. Whether navigating city streets or embarking on open highways, the Volkswagen Polo delivers a dynamic ride that is sure to leave a lasting impression. Experience the epitome of automotive excellence with the Volkswagen Polo, a car that exceeds expectations in every way.
                     </div>
                 </div>
             </li>
@@ -677,7 +671,7 @@
             <!-- Image -->
             <li class="template-component-gallery-image-list-width-2 template-filter-hand-wash template-filter-triple-foam">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="media/image/sample/760x506/image_06.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
                             <span>
@@ -690,9 +684,7 @@
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        Donec eget massa vitae metus maximus tempor. Vivamus maximus mattis ultricies. Sed viverra vitae metus in ornare.
-                        Ut lacus massa finibus quis luctus quis faucibus sit amet risus. Ut elit neque pulvinar sit amet ipsum eget feugiat consequat
-                        magna. Quisque fringilla ex sit amet rutrum varius velit arcu tempus tellus vitae euismod felis orci vel turpis.
+                        The Fiat Bravo is a stylish and dynamic compact car that commands attention on the road. With its striking design and sporty aesthetics, the Bravo exudes confidence and flair. Equipped with advanced features and cutting-edge technology, it offers a thrilling driving experience with optimal performance. The Bravo's spacious interior ensures comfort for both driver and passengers, making every journey a pleasurable one. Embrace the spirit of Italian automotive excellence with the Fiat Bravo, a car that combines style, functionality, and driving pleasure in a captivating package.
                     </div>
                 </div>
             </li>
@@ -700,7 +692,7 @@
             <!-- Image -->
             <li class="template-filter-triple-foam template-filter-hand-polish">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="media/image/sample/460x678/image_03.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/460x678/image_03.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_03.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
                             <span>
@@ -713,9 +705,7 @@
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        Phasellus non commodo dolor. In iaculis eleifend ipsum id lacinia turpis sagittis ut. Ut id vestibulum mauris
-                        ac laoreet augue. Nullam malesuada tempor finibus. Aliquam viverra augue ac tincidunt lacinia. Interdum et malesuada fames
-                        ac ante ipsum primis in faucibus. Nullam ultricies viverra nulla ac egestas.
+                        The BMW Mini Cooper is an iconic and spirited compact car that packs a punch. With its distinctive design and compact size, the Mini Cooper turns heads wherever it goes. Its agile handling and responsive performance make it a joy to drive, whether you're navigating city streets or embarking on thrilling adventures. The Mini Cooper's stylish interior offers a blend of retro charm and modern features, ensuring a comfortable and enjoyable driving experience. Experience the legendary fun and personality of the BMW Mini Cooper, a car that stands out from the crowd with its timeless appeal.
                     </div>
                 </div>
             </li>
@@ -723,7 +713,7 @@
             <!-- Image -->
             <li class="template-filter-auto-detail template-filter-hand-polish">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="media/image/sample/460x306/image_04.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
                             <span>
@@ -736,9 +726,7 @@
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        Praesent efficitur tortor sit amet nulla malesuada id venenatis velit sagittis. Aliquam blandit ipsum quis iaculis feugiat.
-                        Sed eros lacus aliquet ut libero et faucibus ultricies nisi. Donec hendrerit dignissim ante vel feugiat augue tempor non.
-                        Nunc auctor quam sollicitudin est blandit consectetur. Phasellus vitae suscipit purus.
+                        The Mazda 3 is a sleek and dynamic compact car that embodies elegance and performance. With its eye-catching design and sculpted lines, the Mazda 3 commands attention on the road. Equipped with advanced Skyactiv technology, it delivers responsive handling and exceptional fuel efficiency. The Mazda 3's refined interior offers a comfortable and luxurious driving experience, complemented by intuitive infotainment features. Whether cruising on highways or navigating city streets, the Mazda 3 provides a thrilling and engaging ride.
                     </div>
                 </div>
             </li>
@@ -746,7 +734,7 @@
             <!-- Image -->
             <li class="template-filter-triple-foam template-filter-hand-polish template-filter-hand-wax">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="media/image/sample/460x306/image_10.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
                             <span>
@@ -759,21 +747,12 @@
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        Nam et ornare mauris. Nam fringilla eu metus ac vehicula. Mauris dapibus hendrerit ante imperdiet varius orci.
-                        Fusce rutrum lobortis erat. Nunc vehicula vehicula risus sit amet cursus. Curabitur non congue magna vel porttitor magna.
-                        Duis interdum ligula sed lectus elementum ut interdum neque dignissim.
+                        The Mercedes A200 is a symbol of luxury and sophistication in the compact car segment. With its sleek and aerodynamic design, the A200 exudes elegance and modernity. The meticulously crafted interior offers refined comfort and cutting-edge technology, creating a truly premium driving experience. Equipped with powerful yet efficient engines, the A200 delivers impressive performance and dynamic handling. Whether you're cruising on the open highway or navigating urban streets, the Mercedes A200 ensures a smooth and exhilarating ride. Embrace the epitome of luxury and performance with the Mercedes A200, a car that redefines compact luxury.
                     </div>
                 </div>
             </li>
-
         </ul>
-
     </div>
-    <!-- Button -->
-    <div class="template-align-center">
-        <a href="#" class="template-component-button">Browse More Projects</a>
-    </div>
-
 </div>
 
 <!-- Section -->
@@ -841,19 +820,19 @@
             <!-- Recent posts list -->
             <ul class="template-component-recent-post">
                 <li>
-                    <a href="indexb8d3.html?page=single-post-right-sidebar">
+                    <a href="{{ route('blog-post') }}">
                         <span>How to choose car detailing company</span>
                         <span>April 14, 2015</span>
                     </a>
                 </li>
                 <li>
-                    <a href="indexb8d3.html?page=single-post-right-sidebar">
+                    <a href="{{ route('blog-post') }}">
                         <span>Interior car wash and detailing service</span>
                         <span>March 25, 2015</span>
                     </a>
                 </li>
                 <li>
-                    <a href="indexb8d3.html?page=single-post-right-sidebar">
+                    <a href="{{ route('blog-post') }}">
                         <span>How to book a car wash online</span>
                         <span>March 05, 2015</span>
                     </a>
@@ -908,42 +887,5 @@
         </ul>
     </div>
 
-</div>
-
-<!-- Google Maps -->
-<div class="template-section template-section-padding-reset template-clear-fix">
-
-    <!-- Google Map -->
-    <div class="template-component-google-map">
-
-        <!-- Content -->
-        <div class="template-component-google-map-box">
-            <div class="template-component-google-map-box-content"></div>
-        </div>
-
-        <!-- Button -->
-        <a href="#" class="template-component-google-map-button">
-            <span class="template-icon-meta-marker"></span>
-            <span class="template-component-google-map-button-label-show">Show Map</span>
-            <span class="template-component-google-map-button-label-hide">Hide Map</span>
-        </a>
-
-    </div>
-
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            jQuery('.template-component-google-map').templateGoogleMap({
-                coordinate: {
-                    lat: '-37.823952',
-                    lng: '144.958766'
-                },
-                dimension: {
-                    width: '100%',
-                    height: '400px'
-                },
-                marker: 'media/image/map_pointer.png'
-            });
-        });
-    </script>
 </div>
 @endsection

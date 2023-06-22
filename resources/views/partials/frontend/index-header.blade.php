@@ -20,19 +20,13 @@
                 <div class="template-component-menu-default">
                     <ul class="sf-menu">
                         <li><a href="{{ route('home') }}" class="template-state-selected">Home</a></li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="index4d99.html?page=about-style-1">About Style 1</a></li>
-                                <li><a href="indexb9e0.html?page=about-style-2">About Style 2</a></li>
-                                <li><a href="index371c.html?page=service-style-1">Services Style 1</a></li>
-                                <li><a href="index3550.html?page=service-style-2">Services Style 2</a></li>
-                                <li><a href="indexb643.html?page=single-service-right-sidebar">Single Service</a></li>
-                                <li><a href="index4d9f.html?page=404">Page 404</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('booking') }}">Booking</a></li>
-                        <li>
+                        <li><a href="{{ route('services') }}">Services</a></li>
+                        <li><a href="{{ route('blog-post') }}">Blog</a></li>
+                        <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                        <li><a href="{{ route('contact-us') }}">Contact</a></li>
+                        <!-- <li>
                             <a href="#">Services</a>
                             <ul>
                                 <li><a href="index371c.html?page=service-style-1">Services Style 1</a></li>
@@ -40,26 +34,7 @@
                                 <li><a href="indexb643.html?page=single-service-right-sidebar">Single Service - Right Sidebar</a></li>
                                 <li><a href="index1d42.html?page=single-service-left-sidebar">Single Service - Left Sidebar</a></li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                            <ul>
-                                <li><a href="index88dc.html?page=blog-small-image-right-sidebar">Blog Small Image - Right Sidebar</a></li>
-                                <li><a href="index764c.html?page=blog-small-image-left-sidebar">Blog Small Image - Left Sidebar</a></li>
-                                <li><a href="index662f.html?page=blog-large-image-right-sidebar">Blog Large Image - Right Sidebar</a></li>
-                                <li><a href="index33c5.html?page=blog-large-image-left-sidebar">Blog Large Image - Left Sidebar</a></li>
-                                <li><a href="indexb8d3.html?page=single-post-right-sidebar">Single Post - Right Sidebar</a></li>
-                                <li><a href="index381d.html?page=single-post-left-sidebar">Single Post - Left Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="indexd590.html?page=gallery">Gallery</a></li>
-                        <li>
-                            <a href="#">Contact</a>
-                            <ul>
-                                <li><a href="index2a26.html?page=contact-style-1">Contact Style 1</a></li>
-                                <li><a href="index09f0.html?page=contact-style-2">Contact Style 2</a></li>
-                            </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -69,51 +44,15 @@
                 <!-- Mobile menu-->
                 <div class="template-component-menu-responsive">
                     <ul class="flexnav">
-                        <li><a href="#"><span class="touch-button template-icon-meta-arrow-large-tb template-component-menu-button-close"></span>&nbsp;</a></li>
                         <li><a href="{{ route('home') }}" class="template-state-selected">Home</a></li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="index4d99.html?page=about-style-1">About Style 1</a></li>
-                                <li><a href="indexb9e0.html?page=about-style-2">About Style 2</a></li>
-                                <li><a href="index371c.html?page=service-style-1">Services Style 1</a></li>
-                                <li><a href="index3550.html?page=service-style-2">Services Style 2</a></li>
-                                <li><a href="indexb643.html?page=single-service-right-sidebar">Single Service</a></li>
-                                <li><a href="index4d9f.html?page=404">Page 404</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('booking') }}">Booking</a></li>
-                        <li>
-                            <a href="#">Services</a>
-                            <ul>
-                                <li><a href="index371c.html?page=service-style-1">Services Style 1</a></li>
-                                <li><a href="index3550.html?page=service-style-2">Services Style 2</a></li>
-                                <li><a href="indexb643.html?page=single-service-right-sidebar">Single Service - Right Sidebar</a></li>
-                                <li><a href="index1d42.html?page=single-service-left-sidebar">Single Service - Left Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                            <ul>
-                                <li><a href="index88dc.html?page=blog-small-image-right-sidebar">Blog Small Image - Right Sidebar</a></li>
-                                <li><a href="index764c.html?page=blog-small-image-left-sidebar">Blog Small Image - Left Sidebar</a></li>
-                                <li><a href="index662f.html?page=blog-large-image-right-sidebar">Blog Large Image - Right Sidebar</a></li>
-                                <li><a href="index33c5.html?page=blog-large-image-left-sidebar">Blog Large Image - Left Sidebar</a></li>
-                                <li><a href="indexb8d3.html?page=single-post-right-sidebar">Single Post - Right Sidebar</a></li>
-                                <li><a href="index381d.html?page=single-post-left-sidebar">Single Post - Left Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="indexd590.html?page=gallery">Gallery</a></li>
-                        <li>
-                            <a href="#">Contact</a>
-                            <ul>
-                                <li><a href="index2a26.html?page=contact-style-1">Contact Style 1</a></li>
-                                <li><a href="index09f0.html?page=contact-style-2">Contact Style 2</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('services') }}">Services</a></li>
+                        <li><a href="{{ route('blog-post') }}">Blog</a></li>
+                        <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                        <li><a href="{{ route('contact-us') }}">Contact</a></li>
                     </ul>
                 </div>
-
             </nav>
             <script type="text/javascript">
                 jQuery(document).ready(function($) {
@@ -125,10 +64,10 @@
         <!-- Social icons -->
         <div class="template-header-top-icon-list template-component-social-icon-list-1">
             <ul class="template-component-social-icon-list">
-                <li><a href="https://twitter.com/quanticalabs" class="template-icon-social-twitter" target="_blank"></a></li>
-                <li><a href="https://www.facebook.com/QuanticaLabs" class="template-icon-social-facebook" target="_blank"></a></li>
-                <li><a href="https://dribbble.com/quanticalabs" class="template-icon-social-dribbble" target="_blank"></a></li>
-                <li><a href="indexd852.html?page=book-your-wash" class="template-icon-meta-cart"></a></li>
+                <li><a href="#" class="template-icon-social-twitter"></a></li>
+                <li><a href="#" class="template-icon-social-facebook"></a></li>
+                <li><a href="#" class="template-icon-social-dribbble"></a></li>
+                <li><a href="#" class="template-icon-meta-cart"></a></li>
                 <li><a href="#" class="template-icon-meta-search"></a></li>
                 <li><a href="#" class="template-icon-meta-menu"></a></li>
             </ul>
@@ -165,7 +104,7 @@
                         <!-- Layer 04 -->
                         <div class="tp-caption tp-resizeme" data-x="['center','center','center','center','center']" data-hoffset="['0','0','0','0','0']" data-y="['middle','middle','middle','middle','middle']" data-voffset="['150','137','121','142','165']" data-fontsize="['15','15','15','15','15']" data-fontweight="['400','400','400','400','400']" data-lineheight="['15','15','15','15','15']" data-whitespace="['nowrap','nowrap','nowrap','nowrap','nowrap']" data-width="['auto','auto','auto','auto','auto']" data-height="auto" data-basealign="grid" data-transform_idle="o:1;" data-transform_in="o:1;x:0px;y:[-100%];z:0px;s:1500;e:Power4.easeInOut;" data-transform_out="o:1;x:0px;y:[100%];z:0px;s:750;e:Power4.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
 
-                            <a class="template-component-button template-color-white" href="#" title="Purchase Template">Book Now</a>
+                            <a class="template-component-button template-color-white" href="{{ route('booking') }}" title="Purchase Template">Book Now</a>
                         </div>
                     </li>
 
