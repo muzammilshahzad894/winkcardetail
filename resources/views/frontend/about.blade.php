@@ -77,8 +77,8 @@
 
                 <!-- Image -->
                 <div class="template-component-image template-component-image-preloader" style="background-image: none;">
-                    <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1" style="opacity: 1;">
-                        <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" alt="">
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1" style="opacity: 1;">
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" alt="" style="height: 400px; width: 100%;">
                         <span class="template-component-image-hover"></span>
                     </a>
                 </div>
@@ -89,8 +89,8 @@
                     <div class="template-layout-column-left template-margin-bottom-reset" style="visibility: visible;">
                         <div class="template-component-space template-component-space-1"></div>
                         <div class="template-component-image template-component-image-preloader" style="background-image: none;">
-                            <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_09.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1" style="opacity: 1;">
-                                <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_09.jpg') }}" alt="">
+                            <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1" style="opacity: 1;">
+                                <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 185px; width: 100%;">
                                 <span class="template-component-image-hover"></span>
                             </a>
                         </div>
@@ -100,8 +100,8 @@
                     <div class="template-layout-column-right" style="visibility: visible;">
                         <div class="template-component-space template-component-space-1"></div>
                         <div class="template-component-image template-component-image-preloader" style="background-image: none;">
-                            <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_10.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1" style="opacity: 1;">
-                                <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" alt="">
+                            <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1" style="opacity: 1;">
+                                <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 185px; width: 100%;">
                                 <span class="template-component-image-hover"></span>
                             </a>
                         </div>

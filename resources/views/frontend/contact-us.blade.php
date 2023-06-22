@@ -9,7 +9,7 @@
 <div class="template-header-bottom-page-breadcrumb">
     <a href="' . route('home') . '">Home</a><span class="template-icon-meta-arrow-right-12"></span>CONTACT US
 </div>
-'], ['imgClass' => 'template-header-background-1'])
+'], ['imgClass' => 'template-header-background-2'])
 @endsection
 
 @section('content')
@@ -21,40 +21,36 @@
         <!-- Features list -->
         <div class="template-component-feature-list template-component-feature-list-position-left template-clear-fix">
 
-            <!-- Layout 33x33x33% -->
-            <ul class="template-layout-33x33x33 template-clear-fix">
+        <!-- Layout 33x33x33% -->
+        <ul class="template-layout-33x33x33 template-clear-fix">
 
-                <!-- Left column -->
-                <li class="template-layout-column-left" style="visibility: visible;">
-                    <span class="template-icon-feature-phone-circle"></span>
-                    <h5>Call Us At</h5>
-                    <p>
-                        (+505) 122 225 225<br>
-                        (+505) 122 225 224<br>
-                    </p>
-                </li>
+            <!-- Left column -->
+            <li class="template-layout-column-left">
+                <span class="template-icon-feature-phone-circle"></span>
+                <h5>Call Us At</h5>
+                <p>
+                    0415247305<br />
+                </p>
+            </li>
 
-                <!-- Center column -->
-                <li class="template-layout-column-center" style="visibility: visible;">
-                    <span class="template-icon-feature-location-map"></span>
-                    <h5>Our Address</h5>
-                    <p>
-                        464 Rhode Island Av.<br>
-                        Portland, OR 97219
-                    </p>
-                </li>
+            <!-- Center column -->
+            <li class="template-layout-column-center">
+                <span class="template-icon-feature-location-map"></span>
+                <h5>customer service</h5>
+                <p>
+                    24 / 7 customer service<br />
+                </p>
+            </li>
 
-                <!-- Right column -->
-                <li class="template-layout-column-right" style="visibility: visible;">
-                    <span class="template-icon-feature-clock"></span>
-                    <h5>Working hours</h5>
-                    <p>
-                        Monday - Friday: 8 am - 6 pm<br>
-                        Saturday: 8 am - 3 pm
-                    </p>
-                </li>
-
-            </ul>
+            <!-- Right column -->
+            <li class="template-layout-column-right">
+                <span class="template-icon-feature-clock"></span>
+                <h5>Working hours</h5>
+                <p>
+                    Monday - Friday: 8 am - 6 pm<br />
+                </p>
+            </li>
+        </ul>
 
         </div>
 

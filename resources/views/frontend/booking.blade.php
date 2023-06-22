@@ -9,7 +9,7 @@
     <div class="template-header-bottom-page-breadcrumb">
         <a href="' . route('home') . '">Home</a><span class="template-icon-meta-arrow-right-12"></span>Book your wash
     </div>
-'], ['imgClass' => 'template-header-background-1'])
+'], ['imgClass' => 'template-header-background-2'])
 @endsection
 
 @section('content')

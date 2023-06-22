@@ -793,11 +793,69 @@ body,*,input,textarea
 	background-attachment:fixed;
 }
 
-	.template-background-image.template-background-image-1	{	background-image:url('../media/image/background-image/1.jpg');	}
-	.template-background-image.template-background-image-2	{	background-image:url('../media/image/background-image/2.jpg');	}
+	/* .template-background-image.template-background-image-1	{	background-image:url('../media/image/background-image/1.jpg');	} */
+	.template-background-image.template-background-image-1	{	background-image:url('../media/image/wink-detail-images/img1.jpeg');	}
+	/* .template-background-image.template-background-image-2	{	background-image:url('../media/image/background-image/2.jpg');	} */
+	.template-background-image.template-background-image-2	{	background-image:url('../media/image/wink-detail-images/img4.jpeg');	}
+	.template-background-image.template-background-image-2 {
+		position: relative;
+	  }
+	  
+	  .template-background-image.template-background-image-2::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #454343;
+		opacity: 0.5;
+		z-index: 1;
+	  }
+	  
+	  .template-background-image.template-background-image-2 .template-component-header-subheader h2,
+	  .template-background-image.template-background-image-2 .template-component-header-subheader span,
+	  .template-background-image.template-background-image-2 .template-component-recent-post a {
+		color: white;
+		position: relative;
+		z-index: 2;
+	  }
+	  
+	  
+
+
 	.template-background-image.template-background-image-3	{	background-image:url('../media/image/background-image/3.jpg');	}
+	.template-background-image.template-background-image-img6	{	background-image:url('../media/image/wink-detail-images/img6.jpeg');	}
 	.template-background-image.template-background-image-4	{	background-image:url('../media/image/background-image/4.jpg');	}
-	.template-background-image.template-background-image-5	{	background-image:url('../media/image/background-image/5.jpg');	}
+	.template-background-image.template-background-image-5	{	background-image:url('../media/image/wink-detail-images/img5.jpeg');	}
+	.template-section.template-background-image {
+		position: relative;
+	}
+	  
+	.template-section.template-background-image::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.5;
+		z-index: 1;
+	}
+	.our-process h2,
+	.our-process span,
+	.template-component-process-list h5,
+	.template-icon-feature-check,
+	.template-icon-feature-car-check,
+	.template-icon-feature-payment,
+	.template-icon-meta-arrow-large-rl,
+	.template-icon-feature-vacuum-cleaner {
+		color: white;
+		position: relative;
+		z-index: 2;
+	}
+	/* .template-background-image.template-background-image-5	{	background-image:url('../media/image/background-image/5.jpg');	} */
 	.template-background-image.template-background-image-6	{	background-image:url('../media/image/background-image/6.jpg');	}
 	
 /******************************************************************************/
@@ -1702,7 +1760,32 @@ form
 	}
 	
 	.template-header.template-header-background-1 { background-image:url('../media/image/header/header_01.jpg'); }
-	.template-header.template-header-background-2 { background-image:url('../media/image/header/header_02.jpg'); }
+	.template-header.template-header-background-2 { background-image:url('../media/image/wink-detail-images/img15.jpeg'); }
+	.template-header.template-header-background {
+		position: relative;
+	  }
+	  
+	  .template-header.template-header-background::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #454343;
+		opacity: 0.5;
+		z-index: 1;
+	  }
+	  
+	  .template-header-bottom {
+		position: relative;
+		z-index: 2;
+	  }
+	  
+	  .template-header-bottom .template-main {
+		color: white; /* Set the text color to white */
+	  }
+	  
 	.template-header.template-header-background-3 { background-image:url('../media/image/header/header_03.jpg'); }
 	.template-header.template-header-background-4 { background-image:url('../media/image/header/header_04.jpg'); }
 	.template-header.template-header-background-5 { background-image:url('../media/image/header/header_05.jpg'); }

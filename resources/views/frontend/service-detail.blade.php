@@ -9,7 +9,7 @@
 <div class="template-header-bottom-page-breadcrumb">
     <a href="' . route('home') . '">Home</a><span class="template-icon-meta-arrow-right-12"></span>Service Detail
 </div>
-'], ['imgClass' => 'template-header-background-4'])
+'], ['imgClass' => 'template-header-background-2'])
 @endsection
 
 @section('content')
@@ -38,8 +38,8 @@
 
                 <!-- Image -->
                 <div class="template-component-image template-component-image-preloader template-margin-top-1 template-margin-bottom-1" style="background-image: none;">
-                    <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_10.jpg') }}" style="opacity: 1;">
-                        <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_10.jpg') }}" alt="">
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img5.jpeg') }}" style="opacity: 1;">
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img5.jpeg') }}" alt="" style="height: 520px; width: 100%;">
                         <span class="template-component-image-hover"></span>
                     </a>
                 </div>
@@ -526,21 +526,21 @@
                                 <ul>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_07.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>How to Choose Car Detailing Company</span>
                                             <span class="template-icon-meta-time"><span>April 14, 2017</span></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_08.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>Interior Car Wash and Detailing Service</span>
                                             <span class="template-icon-meta-time"><span>March 25, 2017</span></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_09.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img4.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>How To Book a Car Wash Online</span>
                                             <span class="template-icon-meta-time"><span>March 05, 2017</span></span>
                                         </a>

@@ -20,7 +20,7 @@
 
         <!-- Left column -->
         <div class="template-layout-column-left">
-            <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" alt="" />
+            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" alt="" style="height: 490px;" />
         </div>
 
         <!-- Right column -->
@@ -99,7 +99,7 @@
     <div class="template-main">
 
         <!-- Header + subheader -->
-        <div class="template-component-header-subheader">
+        <div class="template-component-header-subheader our-process">
             <h2>Our Process</h2>
             <div></div>
             <span>We know your time is valuable</span>
@@ -599,10 +599,11 @@
                 <div class="template-component-image template-component-image-preloader">
 
                     <!-- Orginal image -->
-                    <a href="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
 
                         <!-- Thumbnail -->
-                        <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" alt="" />
+                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" alt="" /> -->
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" alt="" style="height: 490px;" />
 
                         <!-- Image hover -->
                         <span class="template-component-image-hover">
@@ -629,8 +630,9 @@
             <!-- Image -->
             <li class="template-filter-auto-detail template-filter-triple-foam">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
-                        <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" alt="" />
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" alt="" /> -->
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
                             <span>
                                 <span>
@@ -650,8 +652,9 @@
             <!-- Image -->
             <li class="template-filter-hand-wash template-filter-auto-detail template-filter-hand-wax">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
-                        <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" alt="" />
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img5.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" alt="" /> -->
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img5.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
                             <span>
                                 <span>
@@ -671,8 +674,9 @@
             <!-- Image -->
             <li class="template-component-gallery-image-list-width-2 template-filter-hand-wash template-filter-triple-foam">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
-                        <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" alt="" />
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" alt="" /> -->
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" alt="" style="height: 500px; width: 100%;" />
                         <span class="template-component-image-hover">
                             <span>
                                 <span>
@@ -713,8 +717,9 @@
             <!-- Image -->
             <li class="template-filter-auto-detail template-filter-hand-polish">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
-                        <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" alt="" />
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" alt="" /> -->
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
                             <span>
                                 <span>
@@ -734,8 +739,9 @@
             <!-- Image -->
             <li class="template-filter-triple-foam template-filter-hand-polish template-filter-hand-wax">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
-                        <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" alt="" />
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" alt="" /> -->
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
                             <span>
                                 <span>
@@ -859,18 +865,16 @@
                 <span class="template-icon-feature-phone-circle"></span>
                 <h5>Call Us At</h5>
                 <p>
-                    (+505) 122 225 225<br />
-                    (+505) 122 225 224<br />
+                    0415247305<br />
                 </p>
             </li>
 
             <!-- Center column -->
             <li class="template-layout-column-center">
                 <span class="template-icon-feature-location-map"></span>
-                <h5>Our Address</h5>
+                <h5>customer service</h5>
                 <p>
-                    464 Rhode Island Av.<br />
-                    Portland, OR 97219
+                    24 / 7 customer service<br />
                 </p>
             </li>
 
@@ -880,10 +884,8 @@
                 <h5>Working hours</h5>
                 <p>
                     Monday - Friday: 8 am - 6 pm<br />
-                    Saturday: 8 am - 3 pm
                 </p>
             </li>
-
         </ul>
     </div>
 

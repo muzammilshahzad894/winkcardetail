@@ -1226,3 +1226,28 @@ img.tp-slider-alternative-image	{
 .indebugmode .tp-caption:hover { 	border:1px dashed #c0392b !important;}
 .helpgrid 					   { 	border:2px dashed #c0392b;position:absolute;top:0px;peft:0px;z-index:0 }
 #revsliderlogloglog				{	padding:15px;color:#fff;position:fixed; top:0px;left:0px;width:200px;height:150px;background:rgba(0,0,0,0.7); z-index:100000; font-size:10px; overflow:scroll;}
+
+
+.slide-bg {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slide-bg img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.black-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #454343;
+	opacity: 0.5;
+	z-index: 1;
+}

@@ -120,12 +120,8 @@
 
                 <!-- Social icon list -->
                 <ul class="template-component-social-icon-list template-component-social-icon-list-2">
-                    <li><a href="#" class="template-icon-social-twitter"></a></li>
-                    <li><a href="#" class="template-icon-social-facebook"></a></li>
-                    <li><a href="#" class="template-icon-social-dribbble"></a></li>
-                    <li><a href="#" class="template-icon-social-envato"></a></li>
-                    <li><a href="#" class="template-icon-social-behance"></a></li>
-                    <li><a href="#" class="template-icon-social-youtube"></a></li>
+                    <li><a href="https://www.facebook.com/Winkdetailing.au/" class="template-icon-social-facebook" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/winkcardetailing/" class="template-icon-social-instagram" target="_blank"></a></li>
                 </ul>
 
                 <!-- Copyright -->

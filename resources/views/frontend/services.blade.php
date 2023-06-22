@@ -9,7 +9,7 @@
 <div class="template-header-bottom-page-breadcrumb">
     <a href="' . route('home') . '">Home</a><span class="template-icon-meta-arrow-right-12"></span>Our Services
 </div>
-'], ['imgClass' => 'template-header-background-3'])
+'], ['imgClass' => 'template-header-background-2'])
 @endsection
 
 @section('content')
@@ -40,7 +40,7 @@
         <li class="template-layout-column-left" style="visibility: visible;">
             <div class="template-component-image template-component-image-preloader" style="background-image: none;">
                 <a href="{{ route('service.detail') }}" style="opacity: 1;">
-                    <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_05.jpg') }}" alt="">
+                    <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" alt="" style="height: 240px; width: 100%;">
                     <span class="template-component-image-hover"></span>
                 </a>
             </div>
@@ -56,7 +56,7 @@
         <li class="template-layout-column-center" style="visibility: visible;">
             <div class="template-component-image template-component-image-preloader" style="background-image: none;">
                 <a href="{{ route('service.detail') }}" style="opacity: 1;">
-                    <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_06.jpg') }}" alt="">
+                    <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 240px; width: 100%;">
                     <span class="template-component-image-hover"></span>
                 </a>
             </div>
@@ -71,7 +71,7 @@
         <li class="template-layout-column-right" style="visibility: visible;">
             <div class="template-component-image template-component-image-preloader" style="background-image: none;">
                 <a href="{{ route('service.detail') }}" style="opacity: 1;">
-                    <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_07.jpg') }}" alt="">
+                    <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img4.jpeg') }}" alt="" style="height: 240px; width: 100%;">
                     <span class="template-component-image-hover"></span>
                 </a>
             </div>
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Right column -->
-        <div class="template-background-image template-background-image-3"></div>
+        <div class="template-background-image template-background-image-img6"></div>
 
     </div>
 
@@ -124,7 +124,7 @@
     <div class="template-layout-flex template-background-color-1 template-clear-fix">
 
         <!-- Left column -->
-        <div class="template-background-image template-background-image-4"></div>
+        <div class="template-background-image template-background-image-1"></div>
 
         <!-- Right column -->
         <div class="template-align-center">

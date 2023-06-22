@@ -9,7 +9,7 @@
 <div class="template-header-bottom-page-breadcrumb">
     <a href="' . route('home') . '">Home</a><span class="template-icon-meta-arrow-right-12"></span>How to book a car wash online
 </div>
-'], ['imgClass' => 'template-header-background-1'])
+'], ['imgClass' => 'template-header-background-2'])
 @endsection
 
 @section('content')
@@ -67,8 +67,9 @@
                     <!-- Image -->
                     <div class="template-blog-image">
                         <div class="template-component-image template-component-image-preloader" style="background-image: none;">
-                            <a href="{{ asset('frontend-assets/media/image/sample/760x506/image_09.jpg') }}" style="opacity: 1;">
-                                <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_09.jpg') }}" alt="">
+                            <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img4.jpeg') }}" style="opacity: 1;">
+                                <!-- <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_09.jpg') }}" alt=""> -->
+                                <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img4.jpeg') }}" alt="" style="height: 540px; width: 100%;">
                                 <span class="template-component-image-hover"></span>
                             </a>
                         </div>
@@ -310,21 +311,21 @@
                                 <ul>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_01.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>How to Choose Car Detailing Company</span>
                                             <span class="template-icon-meta-time"><span>April 14, 2017</span></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_02.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>Interior Car Wash and Detailing Service</span>
                                             <span class="template-icon-meta-time"><span>March 25, 2017</span></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_03.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img4.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>How To Book a Car Wash Online</span>
                                             <span class="template-icon-meta-time"><span>March 05, 2017</span></span>
                                         </a>
@@ -345,21 +346,21 @@
                                 <ul>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_04.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>Benefits and Drawbacks of Car Wx</span>
                                             <span class="template-icon-meta-comment"><span>25 Comments</span></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_05.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>Facts That I Bet You Did Not Know</span>
                                             <span class="template-icon-meta-comment"><span>7 Comments</span></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{ route('blog-post') }}">
-                                            <img src="{{ asset('frontend-assets/media/image/sample/100x100/image_06.jpg') }}" alt="">
+                                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img4.jpeg') }}" alt="" style="height: 100px; width: 100px;">
                                             <span>Protecting Elements of Carnauba Wax</span>
                                             <span class="template-icon-meta-comment"><span>5 Comments</span></span>
                                         </a>
