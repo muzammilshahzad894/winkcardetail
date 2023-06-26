@@ -44,7 +44,7 @@
                                             <form action="{{ route('admin.services-menu.destroy', $servicesMenu->id) }}" method="POST" style="display: inline-block;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-danger btn-sm waves-effect waves-light" onclick="return confirm('Are you sure you want to delete this Wash Package?');">
+                                                <button type="submit" class="btn btn-danger btn-sm waves-effect waves-light" onclick="return confirm('Are you sure you want to delete this Service Menu?');">
                                                     <i class="mdi mdi-trash-can me-1"></i> Delete
                                                 </button>
                                             </form>

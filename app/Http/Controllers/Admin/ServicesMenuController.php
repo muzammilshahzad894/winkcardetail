@@ -96,6 +96,9 @@ class ServicesMenuController extends Controller
 
     public function destroy($id)
     {
-        //
+        $servicesMenu = ServicesMenu::find($id);
+        $servicesMenu->delete();
+
+        return redirect()->route('admin.services-menu.index')->with('success', 'Services menu deleted successfully');
     }
 }
