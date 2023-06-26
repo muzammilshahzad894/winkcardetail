@@ -46,13 +46,12 @@ class VehicleTypeController extends Controller
     {
         $request->validate([
             'name' => 'required|unique:vehicle_types,name,' . $id,
-            'image' => 'required',
         ]);
 
         // save in database
         $vehicleType = VehicleType::findOrFail($id);
         $vehicleType->name = $request->name;
-        $vehicleType->image = $request->image;
+        $vehicleType->image = $request->image ?? $vehicleType->image;
         $vehicleType->save();
 
         // redirect to vehicle types index page with success-toastr

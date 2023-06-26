@@ -128,7 +128,7 @@
                                 <span>No wash packages found.</span>
                             </div>
                         </li>
-                        @endif
+                    @endif
                     </ul>
                     <input type="hidden" name="wash_package_id" id="wash_package_id" value="" />
 
@@ -325,7 +325,7 @@
                         <!-- Vehicle make -->
                         <li class="template-layout-column-left template-margin-bottom-reset">
                             <div class="template-component-form-field">
-                                <label for="booking-form-vehicle-make">Vehicle Make</label>
+                                <label for="booking-form-vehicle-make">Vehicle Make & Model</label>
                                 <input type="text" name="vehicle_make" id="booking-form-vehicle-make" value="{{ old('vehicle_make') }}" />
                             </div>
                         </li>
@@ -333,7 +333,7 @@
                         <!-- Vehicle model -->
                         <li class="template-layout-column-center template-margin-bottom-reset">
                             <div class="template-component-form-field">
-                                <label for="booking-form-vehicle-model">Vehicle Model</label>
+                                <label for="booking-form-vehicle-model">Location</label>
                                 <input type="text" name="vehicle_model" id="booking-form-vehicle-model" value="{{ old('vehicle_model') }}" />
                             </div>
                         </li>

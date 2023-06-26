@@ -177,59 +177,22 @@
                         <ul class="template-component-booking-vehicle-list">
 
                             <!-- Vehicle -->
-                            <li data-id="regular-size-car">
-
+                            @if(!empty($vehicleTypes) && count($vehicleTypes) > 0)
+                            @foreach($vehicleTypes as $vehicleType)
+                            <li data-id="{{ $vehicleType->image . '-' . $vehicleType->id }}" class="booking-vehicle-list-item" vehicle-type-id="{{ $vehicleType->id }}" onclick="vehicleFilter('{{ $vehicleType->image . '-' . $vehicleType->id }}')">
                                 <div>
-
-                                    <!-- Icon -->
-                                    <div class="template-icon-vehicle-small-car"></div>
-
-                                    <!-- Name -->
-                                    <div>Regular Size Car</div>
-
-                                </div>
-
-                            </li>
-
-                            <!-- Vehicle -->
-                            <li data-id="medium-size-car">
-                                <div>
-                                    <div class="template-icon-vehicle-car-mid-size"></div>
-                                    <div>Medium Size Car</div>
+                                    <div class="{{ $vehicleType->image }}"></div>
+                                    <div>{{ $vehicleType->name }}</div>
                                 </div>
                             </li>
-
-                            <!-- Vehicle -->
-                            <li data-id="compact-suv">
+                            @endforeach
+                            @else
+                            <li>
                                 <div>
-                                    <div class="template-icon-vehicle-suv"></div>
-                                    <div>Compact SUV</div>
+                                    <div>No vehicle types found.</div>
                                 </div>
                             </li>
-
-                            <!-- Vehicle -->
-                            <li data-id="minivan">
-                                <div>
-                                    <div class="template-icon-vehicle-minivan"></div>
-                                    <div>Minivan</div>
-                                </div>
-                            </li>
-
-                            <!-- Vehicle -->
-                            <li data-id="pickup-truck">
-                                <div>
-                                    <div class="template-icon-vehicle-pickup"></div>
-                                    <div>Pickup Truck</div>
-                                </div>
-                            </li>
-
-                            <!-- Vehicle -->
-                            <li data-id="cargo-truck">
-                                <div>
-                                    <div class="template-icon-vehicle-truck-mid-size"></div>
-                                    <div>Cargo Truck</div>
-                                </div>
-                            </li>
+                            @endif
 
                         </ul>
 
@@ -245,252 +208,49 @@
                         <!-- Package list -->
                         <ul class="template-component-booking-package-list">
 
-                            <!-- Package -->
-                            <li data-id="basic-hand-wash-1" data-id-vehicle-rel="regular-size-car,compact-suv,minivan,pickup-truck,cargo-truck">
+                            @if(!empty($washPackages) && count($washPackages) > 0)
+                            @foreach($washPackages as $washPackage)
+                            <li data-id="{{ $washPackage->id }}" data-id-vehicle-rel="{{ $washPackage->vehicle_type_id }}">
+
+                                <!-- Package -->
+                            <li data-id="{{ $washPackage->vehicleType->image . '-' . $washPackage->vehicle_type_id }}" data-id-vehicle-rel="{{ $washPackage->vehicleType->image . '-' . $washPackage->vehicle_type_id }}" class="booking-package-list-item" wash-package-id="{{ $washPackage->id }}">
 
                                 <!-- Header -->
-                                <h4 class="template-component-booking-package-name">Basic Hand Wash</h4>
+                                <h4 class="template-component-booking-package-name">{{ $washPackage->name }}</h4>
 
+                                <?php
+                                $price = explode('.', $washPackage->price);
+                                ?>
                                 <!-- Price -->
                                 <div class="template-component-booking-package-price">
                                     <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">15</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
+                                    <span class="template-component-booking-package-price-total">{{ $price[0] }}</span>
+                                    <span class="template-component-booking-package-price-decimal">{{ $price[1] ?? '' }}</span>
                                 </div>
 
                                 <!-- Duration -->
                                 <div class="template-component-booking-package-duration">
                                     <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">25</span>
+                                    <span class="template-component-booking-package-duration-value">{{ $washPackage->time }}</span>
                                     <span class="template-component-booking-package-duration-unit">min</span>
                                 </div>
 
                                 <!-- Services -->
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                </ul>
+                                {!! $washPackage->description !!}
 
                                 <!-- Button -->
                                 <div class="template-component-button-box">
                                     <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
                                 </div>
-
                             </li>
-
-                            <!-- Package -->
-                            <li data-id="basic-hand-wash-2" data-id-vehicle-rel="medium-size-car">
-
-                                <!-- Header -->
-                                <h4 class="template-component-booking-package-name">Basic Hand Wash</h4>
-
-                                <!-- Price -->
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">17</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
-                                </div>
-
-                                <!-- Duration -->
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">30</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-
-                                <!-- Services -->
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                </ul>
-
-                                <!-- Button -->
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
-                                </div>
-
-                            </li>
-
-                            <!-- Package -->
-                            <li data-id="deluxe-wash-1" data-id-vehicle-rel="regular-size-car,compact-suv,minivan,pickup-truck,cargo-truck">
-                                <h4 class="template-component-booking-package-name">Deluxe Wash</h4>
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">27</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
-                                </div>
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">45</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                    <li data-id="tire-dressing">Tire Dressing</li>
-                                    <li data-id="windows-in-and-out">Windows In &amp; Out</li>
-                                    <li data-id="sealer-hand-wax">Sealer Hand Wax</li>
-                                </ul>
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
+                            @endforeach
+                            @else
+                            <li>
+                                <div class="template-component-booking-service-name">
+                                    <span>No wash packages found.</span>
                                 </div>
                             </li>
-
-                            <!-- Package -->
-                            <li data-id="deluxe-wash-2" data-id-vehicle-rel="medium-size-car">
-                                <h4 class="template-component-booking-package-name">Deluxe Wash</h4>
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">30</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
-                                </div>
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">55</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                    <li data-id="tire-dressing">Tire Dressing</li>
-                                    <li data-id="windows-in-and-out">Windows In &amp; Out</li>
-                                    <li data-id="sealer-hand-wax">Sealer Hand Wax</li>
-                                </ul>
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
-                                </div>
-                            </li>
-
-                            <!-- Package -->
-                            <li data-id="ultimate-shine-1" data-id-vehicle-rel="regular-size-car,compact-suv,minivan">
-                                <h4 class="template-component-booking-package-name">Ultimate Shine</h4>
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">40</span>
-                                    <span class="template-component-booking-package-price-decimal">45</span>
-                                </div>
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">60</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                    <li data-id="tire-dressing">Tire Dressing</li>
-                                    <li data-id="windows-in-and-out">Windows In &amp; Out</li>
-                                    <li data-id="sealer-hand-wax">Sealer Hand Wax</li>
-                                    <li data-id="interior-vacuum">Interior Vacuum</li>
-                                    <li data-id="trunk-vacuum">Trunk Vacuum</li>
-                                    <li data-id="door-shuts-and-plastics">Door Shuts &amp; Plastics</li>
-                                    <li data-id="dashboard-clean">Dashboard Clean</li>
-                                </ul>
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
-                                </div>
-                            </li>
-
-                            <!-- Package -->
-                            <li data-id="ultimate-shine-2" data-id-vehicle-rel="medium-size-car">
-                                <h4 class="template-component-booking-package-name">Ultimate Shine</h4>
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">52</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
-                                </div>
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">80</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                    <li data-id="tire-dressing">Tire Dressing</li>
-                                    <li data-id="windows-in-and-out">Windows In &amp; Out</li>
-                                    <li data-id="sealer-hand-wax">Sealer Hand Wax</li>
-                                    <li data-id="interior-vacuum">Interior Vacuum</li>
-                                    <li data-id="trunk-vacuum">Trunk Vacuum</li>
-                                    <li data-id="door-shuts-and-plastics">Door Shuts &amp; Plastics</li>
-                                    <li data-id="dashboard-clean">Dashboard Clean</li>
-                                </ul>
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
-                                </div>
-                            </li>
-
-                            <!-- Package -->
-                            <li data-id="platinium-works-1" data-id-vehicle-rel="regular-size-car">
-                                <h4 class="template-component-booking-package-name">Platinum Works</h4>
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">65</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
-                                </div>
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">100</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                    <li data-id="tire-dressing">Tire Dressing</li>
-                                    <li data-id="windows-in-and-out">Windows In &amp; Out</li>
-                                    <li data-id="sealer-hand-wax">Sealer Hand Wax</li>
-                                    <li data-id="interior-vacuum">Interior Vacuum</li>
-                                    <li data-id="trunk-vacuum">Trunk Vacuum</li>
-                                    <li data-id="door-shuts-and-plastics">Door Shuts &amp; Plastics</li>
-                                    <li data-id="dashboard-clean">Dashboard Clean</li>
-                                    <li data-id="air-freshener">Air Freshener</li>
-                                    <li data-id="triple-coat-hand-wax">Triple Coat Hand Wax</li>
-                                    <li data-id="exterior-vinyl-protectant">Exterior Vinyl Protectant</li>
-                                </ul>
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
-                                </div>
-                            </li>
-
-                            <!-- Package -->
-                            <li data-id="platinium-works-2" data-id-vehicle-rel="medium-size-car">
-                                <h4 class="template-component-booking-package-name">Platinum Works</h4>
-                                <div class="template-component-booking-package-price">
-                                    <span class="template-component-booking-package-price-currency">$</span>
-                                    <span class="template-component-booking-package-price-total">82</span>
-                                    <span class="template-component-booking-package-price-decimal">95</span>
-                                </div>
-                                <div class="template-component-booking-package-duration">
-                                    <span class="template-icon-booking-meta-duration"></span>
-                                    <span class="template-component-booking-package-duration-value">125</span>
-                                    <span class="template-component-booking-package-duration-unit">min</span>
-                                </div>
-                                <ul class="template-component-booking-package-service-list">
-                                    <li data-id="exterior-hand-wash">Exterior Hand Wash</li>
-                                    <li data-id="towel-hand-dry">Towel Hand Dry</li>
-                                    <li data-id="wheel-shine">Wheel Shine</li>
-                                    <li data-id="tire-dressing">Tire Dressing</li>
-                                    <li data-id="windows-in-and-out">Windows In &amp; Out</li>
-                                    <li data-id="sealer-hand-wax">Sealer Hand Wax</li>
-                                    <li data-id="interior-vacuum">Interior Vacuum</li>
-                                    <li data-id="trunk-vacuum">Trunk Vacuum</li>
-                                    <li data-id="door-shuts-and-plastics">Door Shuts &amp; Plastics</li>
-                                    <li data-id="dashboard-clean">Dashboard Clean</li>
-                                    <li data-id="air-freshener">Air Freshener</li>
-                                    <li data-id="triple-coat-hand-wax">Triple Coat Hand Wax</li>
-                                    <li data-id="exterior-vinyl-protectant">Exterior Vinyl Protectant</li>
-                                </ul>
-                                <div class="template-component-button-box">
-                                    <a href="{{ route('booking') }}" class="template-component-button">Book Now</a>
-                                </div>
-                            </li>
-
+                            @endif
                         </ul>
 
                     </div>
@@ -602,18 +362,17 @@
                     <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
 
                         <!-- Thumbnail -->
-                        <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_01.jpg') }}" alt="" /> -->
                         <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img17.jpeg') }}" alt="" style="height: 490px;" />
 
                         <!-- Image hover -->
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">BMW i3</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Triple Foam</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
 
                     </a>
@@ -630,21 +389,21 @@
             <!-- Image -->
             <li class="template-filter-auto-detail template-filter-triple-foam">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" alt="" /> -->
-                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">Renault Clio</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Hand Polish</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        The Renault Clio - A perfect blend of style and performance in a compact package. With its sleek design and modern features, the Renault Clio offers a dynamic driving experience. Enjoy the comfort and efficiency of its advanced engine options, making every journey a pleasure. Whether you're cruising through the city or hitting the open road, the Renault Clio delivers a balance of practicality and style that sets it apart. Experience the joy of driving with the Renault Clio, a compact car that exceeds expectations.
+                        The Fiat Bravo is a stylish and dynamic compact car that commands attention on the road. With its striking design and sporty aesthetics, the Bravo exudes confidence and flair. Equipped with advanced features and cutting-edge technology, it offers a thrilling driving experience with optimal performance. The Bravo's spacious interior ensures comfort for both driver and passengers, making every journey a pleasurable one. Embrace the spirit of Italian automotive excellence with the Fiat Bravo, a car that combines style, functionality, and driving pleasure in a captivating package.
                     </div>
                 </div>
             </li>
@@ -656,13 +415,13 @@
                         <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" alt="" /> -->
                         <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img5.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">Volkswagen Polo</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Interior Dusting</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
                     </a>
                     <div class="template-component-image-description">
@@ -674,21 +433,21 @@
             <!-- Image -->
             <li class="template-component-gallery-image-list-width-2 template-filter-hand-wash template-filter-triple-foam">
                 <div class="template-component-image template-component-image-preloader">
-                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                    <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <!-- <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" alt="" /> -->
-                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" alt="" style="height: 500px; width: 100%;" />
+                        <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" alt="" style="height: 500px; width: 100%;" />
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">Fiat Bravo</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Cleaning Waterless Wash &amp; Wax with Carnauba</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
                     </a>
                     <div class="template-component-image-description">
-                        The Fiat Bravo is a stylish and dynamic compact car that commands attention on the road. With its striking design and sporty aesthetics, the Bravo exudes confidence and flair. Equipped with advanced features and cutting-edge technology, it offers a thrilling driving experience with optimal performance. The Bravo's spacious interior ensures comfort for both driver and passengers, making every journey a pleasurable one. Embrace the spirit of Italian automotive excellence with the Fiat Bravo, a car that combines style, functionality, and driving pleasure in a captivating package.
+                        The Renault Clio - A perfect blend of style and performance in a compact package. With its sleek design and modern features, the Renault Clio offers a dynamic driving experience. Enjoy the comfort and efficiency of its advanced engine options, making every journey a pleasure. Whether you're cruising through the city or hitting the open road, the Renault Clio delivers a balance of practicality and style that sets it apart. Experience the joy of driving with the Renault Clio, a compact car that exceeds expectations.
                     </div>
                 </div>
             </li>
@@ -699,13 +458,13 @@
                     <a href="{{ asset('frontend-assets/media/image/sample/460x678/image_03.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                         <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_03.jpg') }}" alt="" />
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">BMW Mini Cooper</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Wheel Shine</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
                     </a>
                     <div class="template-component-image-description">
@@ -721,13 +480,13 @@
                         <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" alt="" /> -->
                         <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">Mazda 3</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Scratch Repair</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
                     </a>
                     <div class="template-component-image-description">
@@ -743,13 +502,13 @@
                         <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" alt="" /> -->
                         <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                         <span class="template-component-image-hover">
-                            <span>
+                            <!-- <span>
                                 <span>
                                     <span class="template-component-image-hover-header">Mercedes A200</span>
                                     <span class="template-component-image-hover-divider"></span>
                                     <span class="template-component-image-hover-subheader">Hazy Headlights Restoring</span>
                                 </span>
-                            </span>
+                            </span> -->
                         </span>
                     </a>
                     <div class="template-component-image-description">

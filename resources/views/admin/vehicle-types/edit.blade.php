@@ -49,9 +49,6 @@
                                         <div class="image-option template-icon-vehicle-pickup {{ $vehicleType->image == 'template-icon-vehicle-pickup' ? 'selected' : '' }}"></div>
                                         <div class="image-option template-icon-vehicle-truck-mid-size {{ $vehicleType->image == 'template-icon-vehicle-truck-mid-size' ? 'selected' : '' }}"></div>
                                     </div>
-                                    @error('image')
-                                    <div class="text-danger">{{ $message }}</div>
-                                    @enderror
                                 </div>
                             </div>
                             <input type="hidden" name="image" id="selected-image-input">

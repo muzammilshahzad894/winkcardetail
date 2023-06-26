@@ -67,7 +67,7 @@
                     <!-- Left column -->
                     <div class="template-layout-column-left">
                         <h6>About</h6>
-                        <p>Wink Car Detailingn Hand Wash is an eco-friendly hand car wash and detailing service based in Portland.</p>
+                        <p>Wink Car Detailingn Hand Wash is an eco-friendly hand car wash and detailing service based in Melbourne.</p>
                         <img src="media/image/logo.png" alt="" class="template-logo" />
                     </div>
 

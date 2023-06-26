@@ -48,13 +48,13 @@
 
                             <!-- Image hover -->
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">BMW i3</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Triple Foam</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
 
                         </a>
@@ -71,21 +71,21 @@
                 <!-- Image -->
                 <li class="template-filter-auto-detail template-filter-triple-foam">
                     <div class="template-component-image template-component-image-preloader">
-                        <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                             <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_01.jpg') }}" alt="" /> -->
-                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
+                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">Renault Clio</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Hand Polish</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
                         </a>
                         <div class="template-component-image-description">
-                            The Renault Clio - A perfect blend of style and performance in a compact package. With its sleek design and modern features, the Renault Clio offers a dynamic driving experience. Enjoy the comfort and efficiency of its advanced engine options, making every journey a pleasure. Whether you're cruising through the city or hitting the open road, the Renault Clio delivers a balance of practicality and style that sets it apart. Experience the joy of driving with the Renault Clio, a compact car that exceeds expectations.
+                            The Fiat Bravo is a stylish and dynamic compact car that commands attention on the road. With its striking design and sporty aesthetics, the Bravo exudes confidence and flair. Equipped with advanced features and cutting-edge technology, it offers a thrilling driving experience with optimal performance. The Bravo's spacious interior ensures comfort for both driver and passengers, making every journey a pleasurable one. Embrace the spirit of Italian automotive excellence with the Fiat Bravo, a car that combines style, functionality, and driving pleasure in a captivating package.
                         </div>
                     </div>
                 </li>
@@ -97,13 +97,13 @@
                             <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_02.jpg') }}" alt="" /> -->
                             <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img5.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">Volkswagen Polo</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Interior Dusting</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
                         </a>
                         <div class="template-component-image-description">
@@ -115,21 +115,21 @@
                 <!-- Image -->
                 <li class="template-component-gallery-image-list-width-2 template-filter-hand-wash template-filter-triple-foam">
                     <div class="template-component-image template-component-image-preloader">
-                        <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
+                        <a href="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                             <!-- <img src="{{ asset('frontend-assets/media/image/sample/760x506/image_06.jpg') }}" alt="" /> -->
-                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img15.jpeg') }}" alt="" style="height: 500px; width: 100%;" />
+                            <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img7.jpeg') }}" alt="" style="height: 500px; width: 100%;" />
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">Fiat Bravo</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Cleaning Waterless Wash &amp; Wax with Carnauba</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
                         </a>
                         <div class="template-component-image-description">
-                            The Fiat Bravo is a stylish and dynamic compact car that commands attention on the road. With its striking design and sporty aesthetics, the Bravo exudes confidence and flair. Equipped with advanced features and cutting-edge technology, it offers a thrilling driving experience with optimal performance. The Bravo's spacious interior ensures comfort for both driver and passengers, making every journey a pleasurable one. Embrace the spirit of Italian automotive excellence with the Fiat Bravo, a car that combines style, functionality, and driving pleasure in a captivating package.
+                            The Renault Clio - A perfect blend of style and performance in a compact package. With its sleek design and modern features, the Renault Clio offers a dynamic driving experience. Enjoy the comfort and efficiency of its advanced engine options, making every journey a pleasure. Whether you're cruising through the city or hitting the open road, the Renault Clio delivers a balance of practicality and style that sets it apart. Experience the joy of driving with the Renault Clio, a compact car that exceeds expectations.
                         </div>
                     </div>
                 </li>
@@ -140,13 +140,13 @@
                         <a href="{{ asset('frontend-assets/media/image/sample/460x678/image_03.jpg') }}" class="template-fancybox" data-fancybox-group="gallery-1">
                             <img src="{{ asset('frontend-assets/media/image/sample/460x678/image_03.jpg') }}" alt="" />
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">BMW Mini Cooper</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Wheel Shine</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
                         </a>
                         <div class="template-component-image-description">
@@ -162,13 +162,13 @@
                             <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_04.jpg') }}" alt="" /> -->
                             <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img9.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">Mazda 3</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Scratch Repair</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
                         </a>
                         <div class="template-component-image-description">
@@ -184,13 +184,13 @@
                             <!-- <img src="{{ asset('frontend-assets/media/image/sample/460x306/image_10.jpg') }}" alt="" /> -->
                             <img src="{{ asset('frontend-assets/media/image/wink-detail-images/img3.jpeg') }}" alt="" style="height: 240px; width: 100%;" />
                             <span class="template-component-image-hover">
-                                <span>
+                                <!-- <span>
                                     <span>
                                         <span class="template-component-image-hover-header">Mercedes A200</span>
                                         <span class="template-component-image-hover-divider"></span>
                                         <span class="template-component-image-hover-subheader">Hazy Headlights Restoring</span>
                                     </span>
-                                </span>
+                                </span> -->
                             </span>
                         </a>
                         <div class="template-component-image-description">

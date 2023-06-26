@@ -29,11 +29,11 @@
                                     @if($vehicleTypes && count($vehicleTypes) > 0)
                                     @foreach($vehicleTypes as $key => $vehicleType)
                                     <tr>
-                                        <td>{{ $vehicleType->name }}</td>
-                                        <td>
+                                        <td class="align-middle">{{ $vehicleType->name }}</td>
+                                        <td class="align-middle">
                                             <div class="image-option {{ $vehicleType->image }}"></div>
                                         </td>
-                                        <td>
+                                        <td class="align-middle">
                                             <a href="{{ route('admin.vehicle-types.edit', $vehicleType->id) }}" class="btn btn-primary btn-sm">Edit</a>
                                             <form action="{{ route('admin.vehicle-types.destroy', $vehicleType->id) }}" method="POST" style="display: inline-block;">
                                                 @csrf
